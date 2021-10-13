@@ -23,6 +23,8 @@ func main() {
 	fmt.Println("area:", r.area())
 	fmt.Println("perimiter:", r.perim())
 
+	// a pointer type can access the methods of its associated value type, but not vice versa.
+	// everything in Go is passed by value
 	rp := &r
 	fmt.Println("area:", rp.area())
 	fmt.Println("perimeter:", rp.perim())
